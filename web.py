@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def get_db_config(db_option):
     config = ConfigParser()
-    config.read('./web.conf')
+    config.read('/srv/app/conf/web.conf')
     try:
         result = config.get("database", db_option)
     except NoSectionError:
@@ -44,4 +44,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run()
