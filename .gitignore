@@ -1,2 +1,6 @@
 .env/
 __pycache__/
+terraform/.terraform/*
+terraform/.terraform*
+terraform/secrets.sh
+terraform/terraform.*
