@@ -1,8 +1,9 @@
 [all]
-vm1 ansible_host=51.250.90.243
+178.154.247.12
 
 [all:vars]
-username="user1"
-version=14
-db_name = "web"
-db_password = "password1"
+db_name=web
+db_user=user1
+db_password=password1
+dp_static_ip=172.18.0.22
+db_net=mynet123

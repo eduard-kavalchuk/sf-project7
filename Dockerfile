@@ -10,7 +10,7 @@ RUN pip install -r /requirements.txt --target /install
 # Use a specific image
 FROM python:3.8-alpine@sha256:41ea2b8caa7fa3740fd0f0a1cad0c26961707a7e3c7cc49559f54b277ef86fb3
 
-# Copy a directory containing a virtual environment to a draft image
+# Copy a directory containing a virtual environment and dev files to a final image
 WORKDIR /srv/app
 RUN mkdir conf
 COPY --from=build /install ./.env

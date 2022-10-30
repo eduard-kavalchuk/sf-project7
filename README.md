@@ -53,10 +53,13 @@ tflint <file.tf>
 ```
 Run playbook (with a verbose output) with specified inventory and groups:
 ```
-ansible-playbook -i hosts -l <groups> <file> -vv
+ansible-playbook -i hosts <file> -vv
 ```
 Check a yaml file with linters:
 ```
 ansible-playbook --syntax-check <file>
-
+```
+```
+sudo docker start web-flask
+```
 
